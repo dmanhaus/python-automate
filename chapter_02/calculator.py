@@ -1,5 +1,5 @@
 from curses.ascii import isdigit
-import operator
+import operator, sys
 
 # Data we need - (Dont worry about these next three lines, we'll learn about lists and tuples in Chapter 4) 
 operators = [('1) Exponent', '**'), ('2) Modulus/remainder','%'), ('3) Integer division/floored quotient','//'), ('4) Division','/'), ('5) Multiplication','*'), ('6) Subtraction','-'), ('7) Addition','+')]
@@ -15,7 +15,7 @@ while True:
     index = input('Enter the number corresponding to the operator to run (press enter to run all operators, "q" to quit): ')
 
     if index == "q":
-        break
+        sys.exit()
 
     if index.strip().isdigit():                                                  # Is the input a number? If it is, get the corresponding operator function and terms from the data and calculate the result
         while (int(index) < 1 or int(index) > len(operators)):                     # is the input number within the range of operator_functions provided?
