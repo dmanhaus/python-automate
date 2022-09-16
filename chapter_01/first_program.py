@@ -11,4 +11,6 @@ print(len(myName))
 print('What is your age?')    # ask for their age
 
 myAge = input()
+
+# TODO: Add error handling in case the user provides non-integer input to "myAge"
 print('You will be ' + str(int(myAge) + 1) + ' in a year.')
