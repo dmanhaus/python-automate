@@ -50,6 +50,11 @@ Now our simple calculator program gives the user some control over which of its 
 operator examples runs.  And we get to import the **operator** module so we can call
 operators programmatically within our code
 
+**Important** - This module depends on the curses package, which is included in unix-based distributions, but **not** in Windows distribution of python.  To avoid a dependency error running this module, install the [windows-curses](https://pypi.org/project/windows-curses/) package:
+```
+pip install windows-curses
+```
+
 ## Chapter 3
 This chapter gives us the power to write our own functions, start to wrap our heads around
 local vs. global scope, introduces the concept of None to represent the lack of a value,
