@@ -52,7 +52,7 @@ def calculate_term(index, print_list_of_terms=False):
         print(f'{operator_name}: {first_term} {operator_symbol} {second_term} = {result}')
 
 # Loop through the list called "operators" and print the text in the first element of each tuple in the list  
-for index in range(1,7):
+for index in range(1,8):
     calculate_term(index, True)
 
 while True:
@@ -69,5 +69,5 @@ while True:
         index = int(index)                                                   
         calculate_term(index)
     else:                                                                        # Run all the operator functions against the terms provided
-        for index in range(1, 7):
+        for index in range(1, 8):
             calculate_term(index)
