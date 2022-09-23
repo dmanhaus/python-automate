@@ -1,11 +1,6 @@
 from curses.ascii import isdigit
 import operator, sys
 
-# Data we need - (Dont worry about these next three lines, we'll learn about lists and tuples in Chapter 4) 
-operators = [('1) Exponent', '**'), ('2) Modulus/remainder','%'), ('3) Integer division/floored quotient','//'), ('4) Division','/'), ('5) Multiplication','*'), ('6) Subtraction','-'), ('7) Addition','+')]
-operator_functions = [operator.pow, operator.mod, operator.floordiv, operator.truediv, operator.mul, operator.sub, operator.add]
-terms = [(2,3), (22,8), (22,8), (22,8), (3,5), (5,2), (2,2)]
-
 print('1) Exponent')
 print('2) Modulus/remainder')
 print('3) Integer division/floored quotient')
