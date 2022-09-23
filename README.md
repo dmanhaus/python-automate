@@ -11,6 +11,8 @@ A collection of code samples and explorations inspired by
     - [calculator.py](#calculatorpy)
   - [Chapter 2](#chapter-2)
     - [calculator.py](#calculatorpy-1)
+  - [Chapter 3](#chapter-3)
+    - [calculator.py](#calculatorpy-2)
 
 ## Chapter 1
 Chapter 1 gives us very basic tools to work with:
@@ -47,3 +49,15 @@ This chapter gives us flow control.  Now we can:
 Now our simple calculator program gives the user some control over which of its predefined 
 operator examples runs.  And we get to import the **operator** module so we can call
 operators programmatically within our code
+
+## Chapter 3
+This chapter gives us the power to write our own functions, start to wrap our heads around
+local vs. global scope, introduces the concept of None to represent the lack of a value,
+and handle errors that may occur in our code more elegantly
+
+### [calculator.py](chapter_03/calculator.py)
+
+Now we can refactor our code to eliminate some repetition by creating one dual-purpose function
+that can either list out all the operators we can run, or calculate results using terms
+we pre-define for each type of operator.
+
