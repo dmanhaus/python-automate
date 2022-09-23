@@ -9,6 +9,8 @@ A collection of code samples and explorations inspired by
   - [Chapter 1](#chapter-1)
     - [first_program.py](#first_programpy)
     - [calculator.py](#calculatorpy)
+  - [Chapter 2](#chapter-2)
+    - [calculator.py](#calculatorpy-1)
 
 ## Chapter 1
 Chapter 1 gives us very basic tools to work with:
@@ -31,3 +33,17 @@ creep into the results when the user inputs unexpected data.
 
 A _very_ simple demonstration combining input and operators to do math. 
 Here, we have an opportunity to learn first-hand about [code duplication](https://en.wikipedia.org/wiki/Duplicate_code), and why it's generally a bad thing.
+
+## Chapter 2
+This chapter gives us flow control.  Now we can:
+  - use booleans returned by comparison operators to determine if values meet specific conditions
+  - use **if...elif...else** code blocks to execute specific pieces of code in response to comparison results
+  - use **while...loop**, **break**, and **continue** to repeat code until conditions are met
+  - use **for...range** loops to create predetermined or variable-control loops to repeat code 
+  - **import** modules from outside of our code to gain use of their functions
+
+### [calculator.py](chapter_02/calculator.py)
+
+Now our simple calculator program gives the user some control over which of its predefined 
+operator examples runs.  And we get to import the **operator** module so we can call
+operators programmatically within our code
